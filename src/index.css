@@ -1,13 +1,166 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: #dd4673;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
+
+.block {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.basket {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  width: 50%;
+}
+
+.main {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  margin: 50px auto;
+  border-radius: 0.5rem;
+  width: 75%;
+}
+
+.row.center {
+  align-items: center;
+}
+
+img.small {
+  max-height: 15rem;
+}
+
+.product {
+  margin: auto;
+}
+
+button {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #f0c040;
+  width: 100%;
+  cursor: pointer;
+}
+
+button.add {
+  background-color: #40c0f0;
+  width: 1.5rem;
+}
+
+button.add:hover {
+  background-color: royalblue;
+  width: 1.60rem;
+}
+
+button.remove {
+  background-color: #f04040;
+  width: 1.5rem;
+}
+
+button.remove:hover {
+  background-color: red;
+  width: 1.60rem;
+}
+
+button.add:focus, button.remove:focus {
+  color: #26e436;
+  border: 2px solid rgba(50, 50, 50, 1);
+  box-shadow: anim-shadow 0.3s forwards;
+}
+
+@keyframes anim-shadow {
+  100% {
+    box-shadow: 0 0 50px 20px rgb(50, 50, 50, 0);
+  }
+}
+
+button.badge {
+  background-color: #f04040;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+@media screen and (max-width: 1200px) {
+  img.small {
+    max-height: 10rem;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  img.small {
+    max-height: 5rem;
+  }
+  .main {
+    width: 90%;
+    font-size: 16px;
+  }
+  .btn {
+    width: 70px;
+  }
+  .fnt {
+    font-size: 16px;
+  }  
+}
+
+@media screen and (max-width: 600px) {
+  img.small {
+    max-height: 3rem;
+  }
+  .main {
+    width: 90%;
+    font-size: 12px;
+  }
+  .btn {
+    width: 50px;
+  }
+  .fnt {
+    font-size: 12px;
+  }  
 }
